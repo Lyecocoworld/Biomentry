@@ -1,0 +1,78 @@
+#configuration for Biomentry
+# General settings
+general:
+  language: 'en'  # Plugin language: 'fr' (French) or 'en' (English)
+
+# Title display settings
+titleInfo:
+  fadeIn: 10      # Fade-in time (in ticks)
+  stay: 70        # Display duration (in ticks)
+  fadeOut: 20     # Fade-out time (in ticks)
+  animationType: 'typewriter'  # Animation type: 'fade' or 'typewriter'
+  typewriterSpeed: 2           # Typewriter speed (characters per tick)
+
+# Priority system for display management
+priority:
+  enabled: true                    # Enable priority system
+  level: 'medium'                  # Priority level: 'low', 'medium', 'high'
+  pauseOnOtherPlugins: true        # Pause biome displays when other plugins show titles
+  resumeDelay: 40                  # Delay (in ticks) before resuming after other plugin finishes
+  checkInterval: 5                 # Interval (in ticks) to check for other plugin activities
+
+# Biome groups – Biomes in the same group won’t trigger a notification 
+# when transitioning between each other
+biomeGroups:
+  # Birch forests
+  - ['birch_forest', 'old_growth_birch_forest']
+  # Taigas
+  - ['taiga', 'old_growth_spruce_taiga', 'old_growth_pine_taiga', 'snowy_taiga']
+  # Dark forests
+  - ['dark_forest']
+  # Oceans
+  - ['ocean', 'deep_ocean', 'warm_ocean', 'lukewarm_ocean', 'cold_ocean', 'frozen_ocean', 'deep_cold_ocean', 'deep_frozen_ocean', 'deep_lukewarm_ocean']
+  # Deserts
+  - ['desert']
+  # Mountains and peaks
+  - ['windswept_hills', 'windswept_forest', 'windswept_gravelly_hills', 'windswept_savanna', 'jagged_peaks', 'frozen_peaks', 'stony_peaks']
+  # Caves
+  - ['deep_dark', 'dripstone_caves', 'lush_caves']
+  # Badlands
+  - ['badlands', 'eroded_badlands', 'wooded_badlands']
+  # Savannas
+  - ['savanna', 'savanna_plateau', 'windswept_savanna']
+
+# WorldGuard regions where notifications are disabled
+disabledRegions:
+  - spawn
+  - safe_zone
+  - pvp_arena
+
+# Example biome configurations with separate display modes
+# Uncomment and modify these examples to customize specific biomes
+#
+# biomes:
+#   forest:
+#     title: "&2Welcome to the Forest"
+#     subtitle: "&aA peaceful place"
+#     display: "title"              # Default display mode for both title and subtitle
+#     titleDisplay: "title"         # Optional: specific display mode for title only
+#     subtitleDisplay: "actionbar"  # Optional: specific display mode for subtitle only
+#     separator: " | "              # Separator when combining title and subtitle
+#     sound: "BLOCK_NOTE_BLOCK_CHIME"
+#   
+#   desert:
+#     title: "&6Desert Wasteland"
+#     subtitle: "&eStay hydrated!"
+#     titleDisplay: "actionbar"     # Title in actionbar
+#     subtitleDisplay: "chat"       # Subtitle in chat
+#     separator: " - "
+#     sound: "BLOCK_SAND_STEP"
+#
+# Available display modes:
+# - "title": Display as Minecraft title/subtitle
+# - "actionbar": Display in the action bar
+# - "chat": Display in chat
+#
+# If titleDisplay or subtitleDisplay are not specified, 
+# the plugin will use the "display" value for both.
+

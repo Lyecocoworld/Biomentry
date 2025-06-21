@@ -1,0 +1,508 @@
+# Fichier de langue française pour Biomentry
+# French language file for Biomentry
+#
+# === FORMATS DE COULEURS SUPPORTÉS ===
+# Vous pouvez utiliser différents formats de couleurs dans les titres et sous-titres :
+#
+# 1. Codes classiques avec & :
+#    &c = rouge, &a = vert, &b = aqua, &e = jaune, &f = blanc
+#    &l = gras, &o = italique, &n = souligné, &m = barré, &k = obfusqué, &r = reset
+#    Exemple: "&c&lTitre Rouge Gras"
+#
+# 2. Balises nominales :
+#    <red>, <green>, <blue>, <yellow>, <white>, <black>, etc.
+#    <bold>, <italic>, <underlined>, <strikethrough>, <obfuscated>, <reset>
+#    Exemple: "<red><bold>Titre Rouge Gras</bold></red>"
+#
+# 3. Dégradés (utilisés par défaut) :
+#    <gradient:#couleur1:#couleur2>texte</gradient>
+#    Exemple: "<gradient:#FF0000:#00FF00>Dégradé Rouge vers Vert</gradient>"
+#
+# 4. Séparateurs personnalisés (NOUVEAU) :
+#    separator: "votre_séparateur_personnalisé"
+#    Si non défini, utilise le séparateur global du config.yml
+#
+# Vous pouvez mélanger ces formats selon vos préférences !
+# =====================================================
+
+biomes:
+  # === BIOMES OVERWORLD ===
+  
+  # Plaines et prairies
+  plains:
+    title: '<gradient:#90EE90:#228B22>§lPlaines</gradient>'
+    subtitle: '<gradient:#90EE90:#228B22>Terres fertiles et paisibles</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  sunflower_plains:
+    title: '<gradient:#FFD700:#FFA500>Plaines de Tournesols</gradient>'
+    subtitle: '<gradient:#FFD700:#FFA500>Champs dorés de tournesols</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  snowy_plains:
+    title: '<gradient:#F0F8FF:#B0C4DE>Plaines Enneigées</gradient>'
+    subtitle: '<gradient:#F0F8FF:#B0C4DE>Étendues blanches infinies</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  ice_spikes:
+    title: '<gradient:#B0E0E6:#4682B4>Pics de Glace</gradient>'
+    subtitle: '<gradient:#B0E0E6:#4682B4>Formations glaciaires spectaculaires</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GLASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Forêts
+  forest:
+    title: '<gradient:#228B22:#006400>Forêt</gradient>'
+    subtitle: '<gradient:#228B22:#006400>Dense végétation naturelle</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  flower_forest:
+    title: '<gradient:#FF69B4:#32CD32>Forêt Fleurie</gradient>'
+    subtitle: '<gradient:#FF69B4:#32CD32>Explosion de couleurs naturelles</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  birch_forest:
+    title: '<gradient:#F5DEB3:#DAA520>Forêt de Bouleaux</gradient>'
+    subtitle: '<gradient:#F5DEB3:#DAA520>Arbres aux troncs blancs élégants</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  old_growth_birch_forest:
+    title: '<gradient:#DEB887:#CD853F>Ancienne Forêt de Bouleaux</gradient>'
+    subtitle: '<gradient:#DEB887:#CD853F>Bouleaux géants ancestraux</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  dark_forest:
+    title: '<gradient:#2F4F4F:#000000>Forêt Sombre</gradient>'
+    subtitle: '<gradient:#2F4F4F:#000000>Ombres profondes et mystérieuses</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_CAVE'
+    separator: ' | '  # Séparateur simple
+    
+  # Taïgas
+  taiga:
+    title: '<gradient:#2E8B57:#1C5F3F>Taïga</gradient>'
+    subtitle: '<gradient:#2E8B57:#1C5F3F>Forêt de conifères nordique</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  snowy_taiga:
+    title: '<gradient:#F0F8FF:#2E8B57>Taïga Enneigée</gradient>'
+    subtitle: '<gradient:#F0F8FF:#2E8B57>Conifères sous la neige</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  old_growth_pine_taiga:
+    title: '<gradient:#1C5F3F:#0F2F1F>Ancienne Taïga de Pins</gradient>'
+    subtitle: '<gradient:#1C5F3F:#0F2F1F>Pins géants millénaires</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  old_growth_spruce_taiga:
+    title: '<gradient:#2E8B57:#1C4F3F>Ancienne Taïga d''Épicéas</gradient>'
+    subtitle: '<gradient:#2E8B57:#1C4F3F>Épicéas ancestraux imposants</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Jungles
+  jungle:
+    title: '<gradient:#32CD32:#228B22>Jungle</gradient>'
+    subtitle: '<gradient:#32CD32:#228B22>Végétation tropicale luxuriante</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_BAMBOO_BREAK'
+    particle: 'VILLAGER_HAPPY'
+    separator: ' | '  # Séparateur simple
+    
+  sparse_jungle:
+    title: '<gradient:#9ACD32:#32CD32>Jungle Clairsemée</gradient>'
+    subtitle: '<gradient:#9ACD32:#32CD32>Jungle moins dense et lumineuse</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_BAMBOO_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  bamboo_jungle:
+    title: '<gradient:#90EE90:#228B22>Jungle de Bambous</gradient>'
+    subtitle: '<gradient:#90EE90:#228B22>Forêt de bambous géants</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_BAMBOO_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Savanes
+  savanna:
+    title: '<gradient:#DAA520:#CD853F>Savane</gradient>'
+    subtitle: '<gradient:#DAA520:#CD853F>Prairies dorées africaines</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  savanna_plateau:
+    title: '<gradient:#D2691E:#A0522D>Plateau de Savane</gradient>'
+    subtitle: '<gradient:#D2691E:#A0522D>Hautes terres de savane</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  windswept_savanna:
+    title: '<gradient:#CD853F:#8B4513>Savane Balayée</gradient>'
+    subtitle: '<gradient:#CD853F:#8B4513>Savane aux vents violents</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Déserts
+  desert:
+    title: '<gradient:#FFD700:#FF8C00>Désert</gradient>'
+    subtitle: '<gradient:#FFD700:#FF8C00>Terres arides et chaudes</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SAND_BREAK'
+    particle: 'DUST'
+    separator: ' | '  # Séparateur avec un soleil
+    
+  # Badlands
+  badlands:
+    title: '<gradient:#CD853F:#8B4513>Badlands</gradient>'
+    subtitle: '<gradient:#CD853F:#8B4513>Terres rouges et arides</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MUD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  eroded_badlands:
+    title: '<gradient:#A0522D:#8B4513>Badlands Érodées</gradient>'
+    subtitle: '<gradient:#A0522D:#8B4513>Formations rocheuses sculptées</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MUD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  wooded_badlands:
+    title: '<gradient:#D2691E:#228B22>Badlands Boisées</gradient>'
+    subtitle: '<gradient:#D2691E:#228B22>Chênes sur terre rouge</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MUD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Marécages
+  swamp:
+    title: '<gradient:#9ACD32:#556B2F>Marécage</gradient>'
+    subtitle: '<gradient:#9ACD32:#556B2F>Terres humides et mystérieuses</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MUD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  mangrove_swamp:
+    title: '<gradient:#8FBC8F:#2E8B57>Marécage de Mangrove</gradient>'
+    subtitle: '<gradient:#8FBC8F:#2E8B57>Racines entrelacées dans l''eau</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MANGROVE_ROOTS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Montagnes et collines
+  windswept_hills:
+    title: '<gradient:#A9A9A9:#2F4F4F>Collines Balayées</gradient>'
+    subtitle: '<gradient:#A9A9A9:#2F4F4F>Reliefs battus par les vents</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  windswept_gravelly_hills:
+    title: '<gradient:#808080:#2F4F4F>Collines Graveleuses</gradient>'
+    subtitle: '<gradient:#808080:#2F4F4F>Pentes rocailleuses et venteuses</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRAVEL_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  windswept_forest:
+    title: '<gradient:#228B22:#2F4F4F>Forêt Balayée</gradient>'
+    subtitle: '<gradient:#228B22:#2F4F4F>Arbres courbés par le vent</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Pics montagneux
+  jagged_peaks:
+    title: '<gradient:#F5F5F5:#696969>Pics Déchiquetés</gradient>'
+    subtitle: '<gradient:#F5F5F5:#696969>Sommets acérés et dangereux</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  frozen_peaks:
+    title: '<gradient:#F0F8FF:#4682B4>Pics Gelés</gradient>'
+    subtitle: '<gradient:#F0F8FF:#4682B4>Sommets de glace éternelle</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GLASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  stony_peaks:
+    title: '<gradient:#A9A9A9:#2F4F4F>Pics Rocheux</gradient>'
+    subtitle: '<gradient:#A9A9A9:#2F4F4F>Sommets de pierre nue</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Vallées et pentes
+  meadow:
+    title: '<gradient:#90EE90:#32CD32>Prairie</gradient>'
+    subtitle: '<gradient:#90EE90:#32CD32>Herbes hautes et fleurs sauvages</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  cherry_grove:
+    title: '<gradient:#FFB6C1:#FF69B4>Bosquet de Cerisiers</gradient>'
+    subtitle: '<gradient:#FFB6C1:#FF69B4>Pétales roses dans le vent</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    particle: 'CHERRY_LEAVES'
+    separator: ' | '  # Séparateur simple
+    
+  grove:
+    title: '<gradient:#F0F8FF:#2E8B57>Bosquet</gradient>'
+    subtitle: '<gradient:#F0F8FF:#2E8B57>Clairière enneigée paisible</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  snowy_slopes:
+    title: '<gradient:#F0F8FF:#B0C4DE>Pentes Enneigées</gradient>'
+    subtitle: '<gradient:#F0F8FF:#B0C4DE>Versants blancs et glissants</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Océans
+  ocean:
+    title: '<gradient:#87CEEB:#191970>Océan</gradient>'
+    subtitle: '<gradient:#87CEEB:#191970>Vastes étendues d''eau</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_ENTER'
+    separator: ' | '  # Séparateur simple
+    
+  deep_ocean:
+    title: '<gradient:#191970:#000080>Océan Profond</gradient>'
+    subtitle: '<gradient:#191970:#000080>Abysses mystérieux</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_LOOP'
+    separator: ' | '  # Séparateur simple
+    
+  cold_ocean:
+    title: '<gradient:#4682B4:#191970>Océan Froid</gradient>'
+    subtitle: '<gradient:#4682B4:#191970>Eaux glaciales nordiques</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_ENTER'
+    separator: ' | '  # Séparateur simple
+    
+  deep_cold_ocean:
+    title: '<gradient:#2F4F4F:#191970>Océan Froid Profond</gradient>'
+    subtitle: '<gradient:#2F4F4F:#191970>Profondeurs glacées</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_LOOP'
+    separator: ' | '  # Séparateur simple
+    
+  frozen_ocean:
+    title: '<gradient:#B0E0E6:#4682B4>Océan Gelé</gradient>'
+    subtitle: '<gradient:#B0E0E6:#4682B4>Eaux glaciales et icebergs</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  deep_frozen_ocean:
+    title: '<gradient:#4682B4:#191970>Océan Gelé Profond</gradient>'
+    subtitle: '<gradient:#4682B4:#191970>Abysses arctiques</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_LOOP'
+    separator: ' | '  # Séparateur simple
+    
+  lukewarm_ocean:
+    title: '<gradient:#87CEEB:#20B2AA>Océan Tiède</gradient>'
+    subtitle: '<gradient:#87CEEB:#20B2AA>Eaux tempérées et accueillantes</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_ENTER'
+    separator: ' | '  # Séparateur simple
+    
+  deep_lukewarm_ocean:
+    title: '<gradient:#20B2AA:#008B8B>Océan Tiède Profond</gradient>'
+    subtitle: '<gradient:#20B2AA:#008B8B>Profondeurs tempérées</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_LOOP'
+    separator: ' | '  # Séparateur simple
+    
+  warm_ocean:
+    title: '<gradient:#40E0D0:#008B8B>Océan Chaud</gradient>'
+    subtitle: '<gradient:#40E0D0:#008B8B>Eaux tropicales cristallines</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_ENTER'
+    separator: ' | '  # Séparateur simple
+    
+  # Rivières et plages
+  river:
+    title: '<gradient:#87CEEB:#4682B4>Rivière</gradient>'
+    subtitle: '<gradient:#87CEEB:#4682B4>Cours d''eau serpentant</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_WATER_AMBIENT'
+    separator: ' | '  # Séparateur simple
+    
+  frozen_river:
+    title: '<gradient:#B0E0E6:#4682B4>Rivière Gelée</gradient>'
+    subtitle: '<gradient:#B0E0E6:#4682B4>Cours d''eau pris par les glaces</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GLASS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  beach:
+    title: '<gradient:#F5DEB3:#DAA520>Plage</gradient>'
+    subtitle: '<gradient:#F5DEB3:#DAA520>Sable fin et vagues douces</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SAND_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  snowy_beach:
+    title: '<gradient:#F0F8FF:#F5DEB3>Plage Enneigée</gradient>'
+    subtitle: '<gradient:#F0F8FF:#F5DEB3>Rivage blanc et glace</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  stony_shore:
+    title: '<gradient:#A9A9A9:#2F4F4F>Rivage Rocheux</gradient>'
+    subtitle: '<gradient:#A9A9A9:#2F4F4F>Côte de pierres et galets</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # Champignons
+  mushroom_fields:
+    title: '<gradient:#FF69B4:#8B008B>Champs de Champignons</gradient>'
+    subtitle: '<gradient:#FF69B4:#8B008B>Île mystique aux champignons géants</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_FUNGUS_STEP'
+    separator: ' | '  # Séparateur simple
+    
+  # Grottes
+  cave:
+    title: '<gradient:#696969:#2F2F2F>Grotte</gradient>'
+    subtitle: '<gradient:#696969:#2F2F2F>Galeries souterraines mystérieuses</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_CAVE'
+    separator: ' | '  # Séparateur simple
+    
+  dripstone_caves:
+    title: '<gradient:#8B7355:#654321>Grottes de Calcite</gradient>'
+    subtitle: '<gradient:#8B7355:#654321>Stalactites et stalagmites</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_DRIPSTONE_BLOCK_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  lush_caves:
+    title: '<gradient:#32CD32:#228B22>Grottes Luxuriantes</gradient>'
+    subtitle: '<gradient:#32CD32:#228B22>Végétation souterraine florissante</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MOSS_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  deep_dark:
+    title: '<gradient:#2F2F2F:#000000>Ténèbres Profondes</gradient>'
+    subtitle: '<gradient:#2F2F2F:#000000>Obscurité absolue et danger</gradient>'
+    display: 'actionbar'
+    sound: 'ENTITY_WARDEN_HEARTBEAT'
+    separator: ' | '  # Séparateur simple
+    
+  # === BIOMES DU NETHER ===
+  
+  nether_wastes:
+    title: '<gradient:#8B0000:#FF4500>Terres Désolées du Nether</gradient>'
+    subtitle: '<gradient:#8B0000:#FF4500>Paysages infernaux désolés</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_NETHER_WASTES_LOOP'
+    separator: ' | '  # Séparateur simple
+    
+  crimson_forest:
+    title: '<gradient:#DC143C:#8B0000>Forêt Carmin</gradient>'
+    subtitle: '<gradient:#DC143C:#8B0000>Champignons rouges géants</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_NETHER_WOOD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  warped_forest:
+    title: '<gradient:#40E0D0:#008B8B>Forêt Biscornue</gradient>'
+    subtitle: '<gradient:#40E0D0:#008B8B>Champignons bleus mystérieux</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_NETHER_WOOD_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  soul_sand_valley:
+    title: '<gradient:#8B7355:#654321>Vallée des Âmes</gradient>'
+    subtitle: '<gradient:#8B7355:#654321>Sables maudits et flammes bleues</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SOUL_SAND_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  basalt_deltas:
+    title: '<gradient:#2F4F4F:#000000>Deltas de Basalte</gradient>'
+    subtitle: '<gradient:#2F4F4F:#000000>Formations volcaniques noires</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_BASALT_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  # === BIOMES DE L'END ===
+  
+  the_end:
+    title: '<gradient:#483D8B:#000000>L''End</gradient>'
+    subtitle: '<gradient:#483D8B:#000000>Dimension du vide éternel</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_CAVE'
+    separator: ' | '  # Séparateur simple
+    
+  end_highlands:
+    title: '<gradient:#9370DB:#483D8B>Hautes Terres de l''End</gradient>'
+    subtitle: '<gradient:#9370DB:#483D8B>Îles flottantes mystérieuses</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  end_midlands:
+    title: '<gradient:#8A2BE2:#4B0082>Terres Moyennes de l''End</gradient>'
+    subtitle: '<gradient:#8A2BE2:#4B0082>Plaines violettes infinies</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  small_end_islands:
+    title: '<gradient:#6A5ACD:#483D8B>Petites Îles de l''End</gradient>'
+    subtitle: '<gradient:#6A5ACD:#483D8B>Fragments d''îles isolées</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '  # Séparateur simple
+    
+  end_barrens:
+    title: '<gradient:#2F2F2F:#000000>Terres Stériles de l''End</gradient>'
+    subtitle: '<gradient:#2F2F2F:#000000>Désolation absolue</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_CAVE'
+    separator: ' | '  # Séparateur simple
+
+  # === NOUVEAUX BIOMES 1.21.4+ ===
+  
+  pale_garden:
+    title: '<gradient:#E6E6FA:#D3D3D3>Jardin Pâle</gradient>'
+    subtitle: '<gradient:#E6E6FA:#D3D3D3>Forêt mystérieuse aux arbres blancs</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_STEP'
+    separator: ' | '  # Séparateur simple

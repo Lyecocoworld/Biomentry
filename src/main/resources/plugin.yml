@@ -1,0 +1,36 @@
+name: Biomentry
+version: '0.1-BETA'
+main: fr.lye.biomentry.Biomentry
+api-version: '1.20'
+author: Lye
+description: Affiche des titres personnalisés lors du changement de biome avec de nombreuses fonctionnalités et optimisations
+website: https://github.com/LyeZinho/Biomentry
+
+softdepend: [WorldGuard]
+
+commands:
+  biomentry:
+    description: Commande principale du plugin Biomentry
+    usage: |
+      §6=== Biomentry Help ===
+      §e/biomentry reload §7- Recharge la configuration
+      §e/biomentry debug <true|false> §7- Active/désactive le mode debug
+      §e/biomentry version §7- Affiche la version du plugin
+      §e/biomentry help §7- Affiche cette aide
+    aliases: [bt]
+
+permissions:
+  biomentry.*:
+    description: Donne accès à toutes les commandes de Biomentry
+    default: op
+    children:
+      biomentry.reload: true
+      biomentry.debug: true
+  
+  biomentry.reload:
+    description: Permet de recharger la configuration
+    default: op
+  
+  biomentry.debug:
+    description: Permet d'activer/désactiver le mode debug
+    default: op
