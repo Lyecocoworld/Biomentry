@@ -1,4 +1,4 @@
-# 🌍 Biomentry *Currently in V0.2*
+# 🌍 Biomentry
 
 **Biomentry** is an immersive Minecraft plugin that displays custom visual and audio notifications when a player enters a new biome — including advanced cave detection. It’s designed to enrich exploration, enhance world-building, and improve player awareness in survival, RPG, and adventure servers.
 
@@ -18,6 +18,8 @@
 - 🛡️ **WorldGuard integration** (disable notifications in certain regions)
 - 🌍 **Multilingual support**: English & French
 - 🛠️ **Advanced configuration options**
+
+*Currently in V0.2 so expect more major features to come*
 
 ---
 
