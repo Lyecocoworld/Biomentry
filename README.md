@@ -29,3 +29,5 @@
 /biomentry debug true|false # Enable or disable debug logging
 /biomentry version          # Show plugin version
 /biomentry language fr|en   # Set player language
+
+*Currently Biomentry is in V0.2*
