@@ -1,0 +1,507 @@
+# Русский файл локализации для Biomentry
+#
+# === ПОДДЕРЖИВАЕМЫЕ ФОРМАТЫ ЦВЕТА ===
+# Вы можете использовать различные форматы цветов в заголовках и подзаголовках:
+#
+# 1. Классические коды с &:
+#    &c = красный, &a = зелёный, &b = аква, &e = жёлтый, &f = белый
+#    &l = жирный, &o = курсив, &n = подчёркнутый, &m = зачёркнутый, &k = размытый, &r = сброс
+#    Пример: "&c&lЖирный красный заголовок"
+#
+# 2. Именованные теги:
+#    <red>, <green>, <blue>, <yellow>, <white>, <black> и т.д.
+#    <bold>, <italic>, <underlined>, <strikethrough>, <obfuscated>, <reset>
+#    Пример: "<red><bold>Жирный красный заголовок</bold></red>"
+#
+# 3. Градиенты (используются по умолчанию):
+#    <gradient:#цвет1:#цвет2>текст</gradient>
+#    Пример: "<gradient:#FF0000:#00FF00>Градиент от красного к зелёному</gradient>"
+#
+# 4. Пользовательские разделители (НОВОЕ):
+#    separator: "ваш_разделитель"
+#    Если не определён, используется глобальный разделитель из config.yml
+#
+# Вы можете смешивать эти форматы по своему усмотрению!
+# =====================================================
+
+biomes:
+  # === БИОМЫ ВЕРХНЕГО МИРА ===
+  
+  # Равнины
+  plains:
+    title: '<gradient:#90EE90:#228B22>§lРавнины</gradient>'
+    subtitle: '<gradient:#90EE90:#228B22>Мирные плодородные земли</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '
+    
+  sunflower_plains:
+    title: '<gradient:#FFD700:#FFA500>Подсолнуховые поля</gradient>'
+    subtitle: '<gradient:#FFD700:#FFA500>Золотые поля подсолнухов</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '
+    
+  snowy_plains:
+    title: '<gradient:#F0F8FF:#B0C4DE>Заснеженные равнины</gradient>'
+    subtitle: '<gradient:#F0F8FF:#B0C4DE>Бескрайние белые просторы</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '
+    
+  ice_spikes:
+    title: '<gradient:#B0E0E6:#4682B4>Ледяные пики</gradient>'
+    subtitle: '<gradient:#B0E0E6:#4682B4>Величественные ледяные образования</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GLASS_BREAK'
+    separator: ' | '
+    
+  # Леса
+  forest:
+    title: '<gradient:#228B22:#006400>Лес</gradient>'
+    subtitle: '<gradient:#228B22:#006400>Густая природная растительность</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '
+    
+  flower_forest:
+    title: '<gradient:#FF69B4:#32CD32>Цветочный лес</gradient>'
+    subtitle: '<gradient:#FF69B4:#32CD32>Взрыв природных красок</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '
+    
+  birch_forest:
+    title: '<gradient:#F5DEB3:#DAA520>Березняк</gradient>'
+    subtitle: '<gradient:#F5DEB3:#DAA520>Элегантные белоствольные деревья</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '
+    
+  old_growth_birch_forest:
+    title: '<gradient:#DEB887:#CD853F>Реликтовый березняк</gradient>'
+    subtitle: '<gradient:#DEB887:#CD853F>Древние гигантские берёзы</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '
+    
+  dark_forest:
+    title: '<gradient:#2F4F4F:#000000>Тёмный лес</gradient>'
+    subtitle: '<gradient:#2F4F4F:#000000>Глубокие таинственные тени</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_CAVE'
+    separator: ' | '
+    
+  # Тайги
+  taiga:
+    title: '<gradient:#2E8B57:#1C5F3F>Тайга</gradient>'
+    subtitle: '<gradient:#2E8B57:#1C5F3F>Северный хвойный лес</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '
+    
+  snowy_taiga:
+    title: '<gradient:#F0F8FF:#2E8B57>Заснеженная тайга</gradient>'
+    subtitle: '<gradient:#F0F8FF:#2E8B57>Засыпанные снегом хвойные деревья</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '
+    
+  old_growth_pine_taiga:
+    title: '<gradient:#1C5F3F:#0F2F1F>Реликтовая сосновая тайга</gradient>'
+    subtitle: '<gradient:#1C5F3F:#0F2F1F>Древние гигантские сосны</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '
+    
+  old_growth_spruce_taiga:
+    title: '<gradient:#2E8B57:#1C4F3F>Реликтовая еловая тайга</gradient>'
+    subtitle: '<gradient:#2E8B57:#1C4F3F>Величественные древние ели</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '
+    
+  # Джунгли
+  jungle:
+    title: '<gradient:#32CD32:#228B22>Джунгли</gradient>'
+    subtitle: '<gradient:#32CD32:#228B22>Буйная тропическая растительность</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_BAMBOO_BREAK'
+    particle: 'VILLAGER_HAPPY'
+    separator: ' | '
+    
+  sparse_jungle:
+    title: '<gradient:#9ACD32:#32CD32>Редкие джунгли</gradient>'
+    subtitle: '<gradient:#9ACD32:#32CD32>Менее густые и более светлые джунгли</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_BAMBOO_BREAK'
+    separator: ' | '
+    
+  bamboo_jungle:
+    title: '<gradient:#90EE90:#228B22>Бамбуковые заросли</gradient>'
+    subtitle: '<gradient:#90EE90:#228B22>Лес из гигантского бамбука</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_BAMBOO_BREAK'
+    separator: ' | '
+    
+  # Саванны
+  savanna:
+    title: '<gradient:#DAA520:#CD853F>Саванна</gradient>'
+    subtitle: '<gradient:#DAA520:#CD853F>Золотые африканские луга</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '
+    
+  savanna_plateau:
+    title: '<gradient:#D2691E:#A0522D>Саванна (плато)</gradient>'
+    subtitle: '<gradient:#D2691E:#A0522D>Возвышенности саванны</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '
+    
+  windswept_savanna:
+    title: '<gradient:#CD853F:#8B4513>Выветренная саванна</gradient>'
+    subtitle: '<gradient:#CD853F:#8B4513>Обдуваемая ветрами саванна</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '
+    
+  # Пустыни
+  desert:
+    title: '<gradient:#FFD700:#FF8C00>Пустыня</gradient>'
+    subtitle: '<gradient:#FFD700:#FF8C00>Горячие засушливые земли</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SAND_BREAK'
+    particle: 'DUST'
+    separator: ' | '
+    
+  # Бесплодные земли
+  badlands:
+    title: '<gradient:#CD853F:#8B4513>Бесплодные земли</gradient>'
+    subtitle: '<gradient:#CD853F:#8B4513>Красные засушливые земли</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MUD_BREAK'
+    separator: ' | '
+    
+  eroded_badlands:
+    title: '<gradient:#A0522D:#8B4513>Выветренные бесплодные земли</gradient>'
+    subtitle: '<gradient:#A0522D:#8B4513>Причудливые скальные образования</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MUD_BREAK'
+    separator: ' | '
+    
+  wooded_badlands:
+    title: '<gradient:#D2691E:#228B22>Лесистые бесплодные земли</gradient>'
+    subtitle: '<gradient:#D2691E:#228B22>Дубы на красной земле</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MUD_BREAK'
+    separator: ' | '
+    
+  # Болота
+  swamp:
+    title: '<gradient:#9ACD32:#556B2F>Болото</gradient>'
+    subtitle: '<gradient:#9ACD32:#556B2F>Таинственные заболоченные земли</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MUD_BREAK'
+    separator: ' | '
+    
+  mangrove_swamp:
+    title: '<gradient:#8FBC8F:#2E8B57>Мангровое болото</gradient>'
+    subtitle: '<gradient:#8FBC8F:#2E8B57>Переплетённые корни в воде</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MANGROVE_ROOTS_BREAK'
+    separator: ' | '
+    
+  # Горы и холмы
+  windswept_hills:
+    title: '<gradient:#A9A9A9:#2F4F4F>Выветренные холмы</gradient>'
+    subtitle: '<gradient:#A9A9A9:#2F4F4F>Обдуваемые ветром рельефы</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '
+    
+  windswept_gravelly_hills:
+    title: '<gradient:#808080:#2F4F4F>Выветренные гравийные холмы</gradient>'
+    subtitle: '<gradient:#808080:#2F4F4F>Каменные и ветреные склоны</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRAVEL_BREAK'
+    separator: ' | '
+    
+  windswept_forest:
+    title: '<gradient:#228B22:#2F4F4F>Выветренный лес</gradient>'
+    subtitle: '<gradient:#228B22:#2F4F4F>Деревья, согнутые ветром</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    separator: ' | '
+    
+  # Горные вершины
+  jagged_peaks:
+    title: '<gradient:#F5F5F5:#696969>Зубчатые вершины</gradient>'
+    subtitle: '<gradient:#F5F5F5:#696969>Острые опасные вершины</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '
+    
+  frozen_peaks:
+    title: '<gradient:#F0F8FF:#4682B4>Замёрзшие вершины</gradient>'
+    subtitle: '<gradient:#F0F8FF:#4682B4>Вечные ледяные вершины</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GLASS_BREAK'
+    separator: ' | '
+    
+  stony_peaks:
+    title: '<gradient:#A9A9A9:#2F4F4F>Каменные вершины</gradient>'
+    subtitle: '<gradient:#A9A9A9:#2F4F4F>Голые каменные вершины</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '
+    
+  # Долины и склоны
+  meadow:
+    title: '<gradient:#90EE90:#32CD32>Луг</gradient>'
+    subtitle: '<gradient:#90EE90:#32CD32>Высокая трава и полевые цветы</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GRASS_BREAK'
+    separator: ' | '
+    
+  cherry_grove:
+    title: '<gradient:#FFB6C1:#FF69B4>Вишнёвая роща</gradient>'
+    subtitle: '<gradient:#FFB6C1:#FF69B4>Розовые лепестки на ветру</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_BREAK'
+    particle: 'CHERRY_LEAVES'
+    separator: ' | '
+    
+  grove:
+    title: '<gradient:#F0F8FF:#2E8B57>Роща</gradient>'
+    subtitle: '<gradient:#F0F8FF:#2E8B57>Мирная заснеженная поляна</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '
+    
+  snowy_slopes:
+    title: '<gradient:#F0F8FF:#B0C4DE>Заснеженные склоны</gradient>'
+    subtitle: '<gradient:#F0F8FF:#B0C4DE>Белые скользкие склоны</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '
+    
+  # Океаны
+  ocean:
+    title: '<gradient:#87CEEB:#191970>Океан</gradient>'
+    subtitle: '<gradient:#87CEEB:#191970>Огромные водные просторы</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_ENTER'
+    separator: ' | '
+    
+  deep_ocean:
+    title: '<gradient:#191970:#000080>Глубокий океан</gradient>'
+    subtitle: '<gradient:#191970:#000080>Таинственные глубины</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_LOOP'
+    separator: ' | '
+    
+  cold_ocean:
+    title: '<gradient:#4682B4:#191970>Холодный океан</gradient>'
+    subtitle: '<gradient:#4682B4:#191970>Северные ледяные воды</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_ENTER'
+    separator: ' | '
+    
+  deep_cold_ocean:
+    title: '<gradient:#2F4F4F:#191970>Глубокий холодный океан</gradient>'
+    subtitle: '<gradient:#2F4F4F:#191970>Замёрзшие глубины</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_LOOP'
+    separator: ' | '
+    
+  frozen_ocean:
+    title: '<gradient:#B0E0E6:#4682B4>Замёрзший океан</gradient>'
+    subtitle: '<gradient:#B0E0E6:#4682B4>Ледяные воды и айсберги</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '
+    
+  deep_frozen_ocean:
+    title: '<gradient:#4682B4:#191970>Глубокий замёрзший океан</gradient>'
+    subtitle: '<gradient:#4682B4:#191970>Арктические глубины</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_LOOP'
+    separator: ' | '
+    
+  lukewarm_ocean:
+    title: '<gradient:#87CEEB:#20B2AA>Тепловатый океан</gradient>'
+    subtitle: '<gradient:#87CEEB:#20B2AA>Приветливые умеренные воды</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_ENTER'
+    separator: ' | '
+    
+  deep_lukewarm_ocean:
+    title: '<gradient:#20B2AA:#008B8B>Глубокий тепловатый океан</gradient>'
+    subtitle: '<gradient:#20B2AA:#008B8B>Умеренные глубины</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_LOOP'
+    separator: ' | '
+    
+  warm_ocean:
+    title: '<gradient:#40E0D0:#008B8B>Тёплый океан</gradient>'
+    subtitle: '<gradient:#40E0D0:#008B8B>Кристально чистые тропические воды</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_UNDERWATER_ENTER'
+    separator: ' | '
+    
+  # Реки и пляжи
+  river:
+    title: '<gradient:#87CEEB:#4682B4>Река</gradient>'
+    subtitle: '<gradient:#87CEEB:#4682B4>Извилистый водный путь</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_WATER_AMBIENT'
+    separator: ' | '
+    
+  frozen_river:
+    title: '<gradient:#B0E0E6:#4682B4>Замёрзшая река</gradient>'
+    subtitle: '<gradient:#B0E0E6:#4682B4>Скованный льдом водный путь</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_GLASS_BREAK'
+    separator: ' | '
+    
+  beach:
+    title: '<gradient:#F5DEB3:#DAA520>Пляж</gradient>'
+    subtitle: '<gradient:#F5DEB3:#DAA520>Мягкий песок и нежные волны</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SAND_BREAK'
+    separator: ' | '
+    
+  snowy_beach:
+    title: '<gradient:#F0F8FF:#F5DEB3>Заснеженный пляж</gradient>'
+    subtitle: '<gradient:#F0F8FF:#F5DEB3>Белый берег и лёд</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SNOW_BREAK'
+    separator: ' | '
+    
+  stony_shore:
+    title: '<gradient:#A9A9A9:#2F4F4F>Каменистый берег</gradient>'
+    subtitle: '<gradient:#A9A9A9:#2F4F4F>Скалистый берег и галька</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '
+    
+  # Грибные биомы
+  mushroom_fields:
+    title: '<gradient:#FF69B4:#8B008B>Грибные поля</gradient>'
+    subtitle: '<gradient:#FF69B4:#8B008B>Мистический остров гигантских грибов</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_FUNGUS_STEP'
+    separator: ' | '
+    
+  # Пещеры
+  cave:
+    title: '<gradient:#696969:#2F2F2F>Пещера</gradient>'
+    subtitle: '<gradient:#696969:#2F2F2F>Таинственные подземные галереи</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_CAVE'
+    separator: ' | '
+    
+  dripstone_caves:
+    title: '<gradient:#8B7355:#654321>Карстовые пещеры</gradient>'
+    subtitle: '<gradient:#8B7355:#654321>Сталактиты и сталагмиты</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_DRIPSTONE_BLOCK_BREAK'
+    separator: ' | '
+    
+  lush_caves:
+    title: '<gradient:#32CD32:#228B22>Заросшие пещеры</gradient>'
+    subtitle: '<gradient:#32CD32:#228B22>Буйная подземная растительность</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_MOSS_BREAK'
+    separator: ' | '
+    
+  deep_dark:
+    title: '<gradient:#2F2F2F:#000000>Тёмные подземелья</gradient>'
+    subtitle: '<gradient:#2F2F2F:#000000>Абсолютная тьма и опасность</gradient>'
+    display: 'actionbar'
+    sound: 'ENTITY_WARDEN_HEARTBEAT'
+    separator: ' | '
+    
+  # === БИОМЫ НЕЗЕРА ===
+  
+  nether_wastes:
+    title: '<gradient:#8B0000:#FF4500>Пустоши Незера</gradient>'
+    subtitle: '<gradient:#8B0000:#FF4500>Пустынные инфернальные ландшафты</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_NETHER_WASTES_LOOP'
+    separator: ' | '
+    
+  crimson_forest:
+    title: '<gradient:#DC143C:#8B0000>Багровый лес</gradient>'
+    subtitle: '<gradient:#DC143C:#8B0000>Гигантские красные грибы</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_NETHER_WOOD_BREAK'
+    separator: ' | '
+    
+  warped_forest:
+    title: '<gradient:#40E0D0:#008B8B>Искажённый лес</gradient>'
+    subtitle: '<gradient:#40E0D0:#008B8B>Таинственные синие грибы</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_NETHER_WOOD_BREAK'
+    separator: ' | '
+    
+  soul_sand_valley:
+    title: '<gradient:#8B7355:#654321>Долина песка душ</gradient>'
+    subtitle: '<gradient:#8B7355:#654321>Проклятые пески и синие огни</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_SOUL_SAND_BREAK'
+    separator: ' | '
+    
+  basalt_deltas:
+    title: '<gradient:#2F4F4F:#000000>Базальтовые дельты</gradient>'
+    subtitle: '<gradient:#2F4F4F:#000000>Чёрные вулканические образования</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_BASALT_BREAK'
+    separator: ' | '
+    
+  # === БИОМЫ ЭНДА ===
+  
+  the_end:
+    title: '<gradient:#483D8B:#000000>Энд</gradient>'
+    subtitle: '<gradient:#483D8B:#000000>Измерение вечной пустоты</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_CAVE'
+    separator: ' | '
+    
+  end_highlands:
+    title: '<gradient:#9370DB:#483D8B>Возвышенности Энда</gradient>'
+    subtitle: '<gradient:#9370DB:#483D8B>Таинственные парящие острова</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '
+    
+  end_midlands:
+    title: '<gradient:#8A2BE2:#4B0082>Равнины Энда</gradient>'
+    subtitle: '<gradient:#8A2BE2:#4B0082>Бесконечные фиолетовые равнины</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '
+    
+  small_end_islands:
+    title: '<gradient:#6A5ACD:#483D8B>Островки Энда</gradient>'
+    subtitle: '<gradient:#6A5ACD:#483D8B>Изолированные фрагменты островов</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_STONE_BREAK'
+    separator: ' | '
+    
+  end_barrens:
+    title: '<gradient:#2F2F2F:#000000>Окраины Энда</gradient>'
+    subtitle: '<gradient:#2F2F2F:#000000>Абсолютное запустение</gradient>'
+    display: 'actionbar'
+    sound: 'AMBIENT_CAVE'
+    separator: ' | '
+
+  # === НОВЫЕ БИОМЫ 1.21.4+ ===
+  
+  pale_garden:
+    title: '<gradient:#E6E6FA:#D3D3D3>Бледный сад</gradient>'
+    subtitle: '<gradient:#E6E6FA:#D3D3D3>Таинственный лес белых деревьев</gradient>'
+    display: 'actionbar'
+    sound: 'BLOCK_CHERRY_WOOD_STEP'
+    separator: ' | '
